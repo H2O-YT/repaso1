@@ -1,0 +1,47 @@
+.container {
+    position: relative;
+}
+
+.calculator-grid {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    background-color: #fff;
+    opacity: 0.1;
+    transition: 0.3s;
+    cursor: default;
+    border-radius: 30px;
+}
+
+.calculator-grid:hover {
+    opacity: 1;
+}
+
+.row {
+    width: 400px;
+    height: 70px;
+}
+
+.row button {
+    float: left;
+    width: 25%;
+    background-color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 30px;
+}
+
+.row .span-two {
+    float: left;
+    width: 50%;
+    color: #5656ca;
+}
+
+.output {
+    width: 400px;
+    height: 100px;
+    background-color: #747474;
+    font-size: 40px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+}

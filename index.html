@@ -7,6 +7,7 @@
 	<title>Estadística (parte 1)</title>
 	<link rel="stylesheet" href="dist/reveal.css">
 	<link rel="stylesheet" href="dist/theme/black.css">
+	<link rel="stylesheet" href="calculator.css">
 </head>
 <body>
 	<div class="reveal">
@@ -20,16 +21,9 @@
 			<section>
 				<section class="fv-background" fv-video="manim_videos/MedidasDeDispersion.mp4" fv-playback-info="manim_videos/MedidasDeDispersion.json"></section>
 				<section data-auto-animate>
-					<p>¿Cuál distribución tiene mayor dispersión?</p>
-				</section>
-				<section data-auto-animate>
-					<p>¿Cuál distribución tiene mayor dispersión?</p>
-					<p style="color: #FFFF00;">Distribución amarilla</p>
-				</section>
-				<section data-auto-animate>
-					<p>¿Cuál distribución tiene mayor dispersión?</p>
-					<p style="color: #FFFF00;">Distribución amarilla</p>
-					<p style="color: #58C4DD;">Distribución azul</p>
+					<p class="fragment">¿Cuál distribución tiene mayor dispersión?</p>
+					<p class="fragment" style="color: #FFFF00;">Distribución amarilla</p>
+					<p class="fragment" style="color: #58C4DD;">Distribución azul</p>
 				</section>
 				<section data-auto-animate>
 					<p>¿Cuál distribución tiene mayor dispersión?</p>
@@ -40,40 +34,17 @@
 			<section>
 				<section class="fv-background" fv-video="manim_videos/Rango.mp4" fv-playback-info="manim_videos/Rango.json"></section>
 				<section data-auto-animate>
-					<p>
+					<p class="fragment">
 						El entrenador de un equipo de natación elegirá entre Daniela y Bárbara
 						basándose en los segundos de sus últimas cinco competencias de 100 m.
 					</p>
-					<p>Daniela: 64, 58, 68, 62, 65; Bárbara: 69, 63, 65, 50, 70</p>
-					<p>
+					<p class="fragment">Daniela: 64, 58, 68, 62, 65; Bárbara: 69, 63, 65, 50, 70</p>
+					<p class="fragment">
 						¿A cuál competidora elegiría basándose en el promedio y rango, considerando
 						que el entrenador busca a una competidora cuyos tiempos no varíen demasiado?
 					</p>
-				</section>
-				<section data-auto-animate>
-					<p>
-						El entrenador de un equipo de natación elegirá entre Daniela y Bárbara
-						basándose en los segundos de sus últimas cinco competencias de 100 m.
-					</p>
-					<p>Daniela: 64, 58, 68, 62, 65; Bárbara: 69, 63, 65, 50, 70</p>
-					<p>
-						¿A cuál competidora elegiría basándose en el promedio y rango, considerando
-						que el entrenador busca a una competidora cuyos tiempos no varíen demasiado?
-					</p>
-					<p style="color:#FFFF00;">Daniela</p>
-				</section>
-				<section data-auto-animate>
-					<p>
-						El entrenador de un equipo de natación elegirá entre Daniela y Bárbara
-						basándose en los segundos de sus últimas cinco competencias de 100 m.
-					</p>
-					<p>Daniela: 64, 58, 68, 62, 65; Bárbara: 69, 63, 65, 50, 70</p>
-					<p>
-						¿A cuál competidora elegiría basándose en el promedio y rango, considerando
-						que el entrenador busca a una competidora cuyos tiempos no varíen demasiado?
-					</p>
-					<p style="color:#FFFF00;">Daniela</p>
-					<p style="color:#58C4DD;">Bárbara</p>
+					<p class="fragment" style="color:#FFFF00;">Daniela</p>
+					<p class="fragment" style="color:#58C4DD;">Bárbara</p>
 				</section>
 				<section data-auto-animate>
 					<p>
@@ -92,31 +63,50 @@
 			<section>
 				<section class="fv-background" fv-video="manim_videos/DesviacionMedia.mp4" fv-playback-info="manim_videos/DesviacionMedia.json"></section>
 				<section data-auto-animate>
-					<p>
+					<p class="fragment">
 						Un conductor está eligiendo entre dos autos considerando el aspecto de la seguridad.
 						Para ello, realizó pruebas de frenado en ambos, midiendo el tiempo en segundos.
 					</p>
-					<p>Auto 1: 12, 9, 8, 9, 10, 11, 9, 7; Auto 2: 11, 8, 7, 10, 10, 10, 8, 10</p>
-					<p>¿Cuál es el mejor auto basándose en la desviación media de ambas distribuciones?</p>
-				</section>
-				<section data-auto-animate>
-					<p>
-						Un conductor está eligiendo entre dos autos considerando el aspecto de la seguridad.
-						Para ello, realizó pruebas de frenado en ambos, midiendo el tiempo en segundos.
-					</p>
-					<p>Auto 1: 12, 9, 8, 9, 10, 11, 9, 7; Auto 2: 11, 8, 7, 10, 10, 10, 8, 10</p>
-					<p>¿Cuál es el mejor auto basándose en la desviación media de ambas distribuciones?</p>
-					<p style="color:#ffff00;">Auto 1</p>
-				</section>
-				<section data-auto-animate>
-					<p>
-						Un conductor está eligiendo entre dos autos considerando el aspecto de la seguridad.
-						Para ello, realizó pruebas de frenado en ambos, midiendo el tiempo en segundos.
-					</p>
-					<p>Auto 1: 12, 9, 8, 9, 10, 11, 9, 7; Auto 2: 11, 8, 7, 10, 10, 10, 8, 10</p>
-					<p>¿Cuál es el mejor auto basándose en la desviación media de ambas distribuciones?</p>
-					<p style="color:#ffff00;">Auto 1</p>
-					<p style="color:#58C4DD;">Auto 2</p>
+					<p class="fragment">Auto 1: 12, 9, 8, 9, 10, 11, 9, 7; Auto 2: 11, 8, 7, 10, 10, 10, 8, 10</p>
+					<p class="fragment">¿Cuál es el mejor auto basándose en la desviación media de ambas distribuciones?</p>
+					<p class="fragment" style="color:#ffff00;">Auto 1</p>
+					<p class="fragment" style="color:#58C4DD;">Auto 2</p>
+					<div class="container">
+						<div class="calculator-grid">
+							<div class="output">
+								<div data-previous-operand class="previous-operand"></div>
+								<div data-current-operand class="current-operand"></div>
+							</div>
+							<div class="row">
+								<button data-all-clear class="span-two">AC</button>
+								<button data-delete>DEL</button>
+								<button data-operation>÷</button>
+							</div>
+							<div class="row">
+								<button data-number>1</button>
+								<button data-number>2</button>
+								<button data-number>3</button>
+								<button data-operation>*</button>
+							</div>
+							<div class="row">
+								<button data-number>4</button>
+								<button data-number>5</button>
+								<button data-number>6</button>
+								<button data-operation>+</button>
+							</div>
+							<div class="row">
+								<button data-number>7</button>
+								<button data-number>8</button>
+								<button data-number>9</button>
+								<button data-operation>-</button>
+							</div>
+							<div class="row">
+								<button data-number class="corner1">0</button>
+								<button data-number>.</button>
+								<button data-equals class="span-two corner2">=</button>
+							</div>
+						</div>
+					</div>
 				</section>
 				<section data-auto-animate>
 					<p>
@@ -131,7 +121,7 @@
 			</section>
 			<section>
 				<p>¡Gracias por ver!</p>
-				<p style="color:#f00;">Suscríbete</p>
+				<p><a style="color:#f00;" href="https://www.youtube.com/channel/UCqoZ_UlTisXuqBeyWpG2mvg">Suscríbete</a></p>
 			</section>
 		</div>
 	</div>
@@ -149,5 +139,6 @@
 			plugins: [ RevealMarkdown, RevealHighlight, RevealNotes, RevealManim, RevealMath.KaTeX, RevealZoom ]
 		});
 	</script>
+	<script src="calculator.js"></script>
 </body>
 </html>
